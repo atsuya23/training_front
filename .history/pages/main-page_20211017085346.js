@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Cookie from "universal-cookie";
-import Layout from "../styles/components/organisms_atomic/Layout";
+import Layout from "../styles/components/templates/Layout";
 
 const cookie = new Cookie();
 

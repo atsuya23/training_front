@@ -1,4 +1,4 @@
-import Layout from "../styles/components/organisms_atomic/Layout";
+import Layout from "../styles/components/templates/Layout";
 
 export default function RecordPage() {
   return (

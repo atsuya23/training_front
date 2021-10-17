@@ -1,5 +1,5 @@
-import Auth from "../styles/components/pages_atomic/Auth";
-import Layout from "../styles/components/organisms_atomic/Layout"
+import Auth from "../styles/components/Auth";
+import Layout from "../styles/components/Layout"
 
 export default function Home() {
   return (

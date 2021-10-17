@@ -1,4 +1,4 @@
-export function Header() {
+export default function Header() {
   return (
     <div class="">
       <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
