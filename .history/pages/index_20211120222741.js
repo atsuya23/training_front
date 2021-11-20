@@ -6,7 +6,7 @@ export default function Home() {
     <Layout title="Record Training enter">
       <div class="bg-gray-100 py-6 sm:py-8 lg:py-12">
         <section class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-          <div class="flex flex-wrap justify-between">
+          <div class="flex flex-wrap justify-between mb-8 md:mb-16">
             <div class="w-full lg:w-1/3 flex flex-col justify-center lg:pt-48 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
               <h1 class="text-black-800 text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-8">
                 Record your
@@ -39,6 +39,29 @@ export default function Home() {
                   class="w-full h-full object-cover object-center"
                 />
               </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="w-64 h-12 flex border rounded-lg overflow-hidden divide-x">
+              <a
+                href="#"
+                class="w-1/3 flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 text-gray-500 transition duration-100"
+              >
+                Men
+              </a>
+              <a
+                href="#"
+                class="w-1/3 flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 text-gray-500 transition duration-100"
+              >
+                Women
+              </a>
+              <a
+                href="#"
+                class="w-1/3 flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 text-gray-500 transition duration-100"
+              >
+                Teens
+              </a>
             </div>
           </div>
         </section>
