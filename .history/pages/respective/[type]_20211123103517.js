@@ -110,83 +110,6 @@ export default function ContentSortedType({ contents, type }) {
                 ))}
             </div>
             <div>
-              {goalAmount != 0 && (
-                <div class="border rounded-3xl bg-blue-300 bg-opacity-30 p-4 shadow-xl mt-5">
-                  <h3 class="text-gray-800 text-base lg:text-lg font-semibold mb-3 animate-pulse italic text-center">
-                    Overall
-                  </h3>
-                  <h2 class="text-red-400 text-lg lg:text-xl font-bold mb-3">
-                    Sum Up :{" "}
-                    {total > 10 ** 4
-                      ? `${
-                          Math.floor(total / 100) / 10
-                        }t (${total.toLocaleString()}Kg)`
-                      : `${total.toLocaleString()}Kg`}
-                  </h2>
-
-                  <div class="flex items-center gap-2 mb-0.5">
-                    {/* stars - start */}
-                    <div class="flex gap-0.5 -ml-1">
-                      {starNumber &&
-                        Array(starNumber)
-                          .fill("text-yellow-400")
-                          .map((color) => {
-                            return (
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className={`w-6 h-6 ${color}`}
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                              >
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                              </svg>
-                            );
-                          })}
-                      {remainStarNumber &&
-                        Array(remainStarNumber)
-                          .fill("text-gray-500")
-                          .map((color) => {
-                            return (
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className={`w-6 h-6 opacity-40 ${color}`}
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                              >
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                              </svg>
-                            );
-                          })}
-                    </div>
-                    {/* stars - end */}
-
-                    <span class="text-sm font-semibold text-gray-400">
-                      {starNumber && starNumber}/10
-                    </span>
-                  </div>
-
-                  <span class="block text-gray-500 text-base">
-                    Goal Amount :{" "}
-                    <a class="font-bold">{goalAmount && goalAmount / 1000}t</a>
-                  </span>
-
-                  <div class="flex flex-col border-t border-b gap-2 py-5 my-5">
-                    {/* star - start */}
-                    <div class="flex items-center gap-3">
-                      <span class="w-10 text-gray-600 text-sm text-right whitespace-nowrap">
-                        Sum
-                      </span>
-
-                      <div class="h-4 flex flex-1 bg-white overflow-hidden rounded-full">
-                        <span
-                          class={`w-${progress}/12 h-full bg-yellow-400 rounded-full`}
-                        ></span>
-                      </div>
-                    </div>
-                    {/* star - end */}
-                  </div>
-                </div>
-              )}
               {/* 気が向いたら月ごととかでまとめるとか？ */}
 
               <img
@@ -207,7 +130,7 @@ export async function getStaticPaths() {
   const paths = await getAllContentType();
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 

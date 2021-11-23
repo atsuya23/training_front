@@ -36,7 +36,7 @@ export async function getStaticPaths() {
   const paths = await getAllTrainingId();
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 }
 

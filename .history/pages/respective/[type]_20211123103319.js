@@ -110,7 +110,7 @@ export default function ContentSortedType({ contents, type }) {
                 ))}
             </div>
             <div>
-              {goalAmount != 0 && (
+              {/* {goalAmount != 0 && (
                 <div class="border rounded-3xl bg-blue-300 bg-opacity-30 p-4 shadow-xl mt-5">
                   <h3 class="text-gray-800 text-base lg:text-lg font-semibold mb-3 animate-pulse italic text-center">
                     Overall
@@ -186,7 +186,8 @@ export default function ContentSortedType({ contents, type }) {
                     {/* star - end */}
                   </div>
                 </div>
-              )}
+              )} */}
+
               {/* 気が向いたら月ごととかでまとめるとか？ */}
 
               <img
@@ -207,7 +208,7 @@ export async function getStaticPaths() {
   const paths = await getAllContentType();
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 

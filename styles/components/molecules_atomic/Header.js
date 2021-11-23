@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
 
-import ModifyButton from "../atoms_atomic/button/ModifyButton";
-import RegisterButton from "../atoms_atomic/button/RegisterButton";
+// import ModifyButton from "../atoms_atomic/button/ModifyButton";
+// import RegisterButton from "../atoms_atomic/button/RegisterButton";
 import SideBar from "./SideBar";
 
 export default function Header() {
@@ -69,16 +69,16 @@ export default function Header() {
               onClick={() => setIsOpenBar(!isOpenBar)}
             >
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M4 6h16M4 12h16m-7 6h7"
                 ></path>
               </svg>

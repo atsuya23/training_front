@@ -187,6 +187,7 @@ export default function ContentSortedType({ contents, type }) {
                   </div>
                 </div>
               )}
+
               {/* 気が向いたら月ごととかでまとめるとか？ */}
 
               <img
@@ -207,7 +208,7 @@ export async function getStaticPaths() {
   const paths = await getAllContentType();
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 

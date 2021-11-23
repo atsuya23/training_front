@@ -100,14 +100,14 @@ export default function ContentSortedType({ contents, type }) {
                   </table>
                 </div>
               </div>
-              {contents &&
+              {/* {contents &&
                 contents.map((content) => (
                   <ContentEachTotal
                     key={content.id}
                     content={content}
                     aboutTraining={content.id_training}
                   />
-                ))}
+                ))} */}
             </div>
             <div>
               {goalAmount != 0 && (
@@ -207,7 +207,7 @@ export async function getStaticPaths() {
   const paths = await getAllContentType();
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
