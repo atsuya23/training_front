@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { mutate } from "swr";
 
 import Layout from "../../styles/components/organisms_atomic/Layout";
-// import useSWR from "swr";
+import useSWR from "swr";
 import {
   getAllContentType,
   getContentByType,
@@ -11,7 +11,7 @@ import {
 import ContentEachTotal from "../../styles/components/molecules_atomic/page-elements/ContentEachTotal";
 import TypeToJap from "../../styles/components/atoms_atomic/changeWord/TypeToJap";
 import TypeToEng from "../../styles/components/atoms_atomic/changeWord/TypeToEng";
-// import { RESTAPI_URL } from "../../Secret";
+import { RESTAPI_URL } from "../../Secret";
 
 export default function ContentSortedType({ contents, type }) {
   const router = useRouter();

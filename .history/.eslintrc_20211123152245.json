@@ -1,6 +1,7 @@
 {
   // "extends": "next/core-web-vitals"
   "extends": "eslint:recommended",
+  "parser": "babel-eslint"
   
  
 }

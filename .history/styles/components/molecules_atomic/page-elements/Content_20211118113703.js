@@ -2,7 +2,7 @@ import TypeToJap from "../../atoms_atomic/changeWord/TypeToJap";
 
 export default function Content({ content }) {
   return (
-    <div>
+    <>
       {/* --- Content start --- */}
       <div class="flex flex-col sm:flex-row gap-2 md:gap-4 border-b border-dotted border-gray-400">
         <div class="text-gray-600 font-normal inline-block md:text-xl text-left pt-4 pb-3 pl-2">
@@ -38,6 +38,6 @@ export default function Content({ content }) {
       </div>
 
       {/* --- Content end --- */}
-    </div>
+    </>
   );
 }
