@@ -207,7 +207,7 @@ export async function getStaticPaths() {
   const paths = await getAllContentType();
   return {
     paths,
-    fallback: false,
+    fallback: flase,
   };
 }
 
