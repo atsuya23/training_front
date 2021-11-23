@@ -9,7 +9,7 @@ export default function Footer() {
               href="../main-page"
               class="text-gray-700 hover:text-indigo-700 hover:underline active:text-indigo-600 transition duration-100"
             >
-              メイン
+              メインページ
             </a>
             <a
               href="../record-page"
@@ -27,13 +27,13 @@ export default function Footer() {
               href="../plan-page"
               class="text-gray-700 hover:text-indigo-700 hover:underline active:text-indigo-600 transition duration-100"
             >
-              計画
+              トレーニング計画
             </a>
             <a
               href="../memo-page"
               class="text-gray-700 hover:text-indigo-700 hover:underline active:text-indigo-600 transition duration-100"
             >
-              備忘録
+              備忘録用
             </a>
           </nav>
           {/* nav - end */}

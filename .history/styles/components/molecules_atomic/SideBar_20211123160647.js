@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SideBar({ isOpenBar, setIsOpenBar }) {
   return (
-    <div class="flex flex-wrap bg-gray-100 w-full h-56 top-16 sticky z-10 lg:hidden">
+    <div class="flex flex-wrap bg-gray-100 w-full h-80 top-16 sticky z-10 lg:hidden">
       <div class="w-full bg-white p-3 shadow-lg rounded-3xl">
         <div class="items-center space-x-4 p-2">
           <h4 class="flex font-semibold text-base text-gray-700 capitalize font-poppins tracking-wide">
@@ -13,7 +13,7 @@ export default function SideBar({ isOpenBar, setIsOpenBar }) {
               onClick={() => setIsOpenBar(!isOpenBar)}
             >
               <svg
-                className="w-6 h-6 pb-1"
+                className="pl-1 pt-1 w-8 h-8 items-center"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -23,13 +23,13 @@ export default function SideBar({ isOpenBar, setIsOpenBar }) {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M5 15l7-7 7 7"
+                  d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
                 ></path>
               </svg>
             </button>
           </h4>
         </div>
-        <ul class="text-sm text-center pl-3">
+        <ul class="space-y-2 text-sm text-center pl-3">
           {/* for main */}
           <li>
             <div class="group flex items-center space-x-3 text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">

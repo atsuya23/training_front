@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SideBar({ isOpenBar, setIsOpenBar }) {
   return (
-    <div class="flex flex-wrap bg-gray-100 w-full h-56 top-16 sticky z-10 lg:hidden">
+    <div class="flex flex-wrap bg-gray-100 w-full h-80 top-16 sticky z-10 lg:hidden">
       <div class="w-full bg-white p-3 shadow-lg rounded-3xl">
         <div class="items-center space-x-4 p-2">
           <h4 class="flex font-semibold text-base text-gray-700 capitalize font-poppins tracking-wide">
@@ -13,7 +13,7 @@ export default function SideBar({ isOpenBar, setIsOpenBar }) {
               onClick={() => setIsOpenBar(!isOpenBar)}
             >
               <svg
-                className="w-6 h-6 pb-1"
+                className="pl-1 pt-1 w-8 h-8 items-center"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -23,13 +23,13 @@ export default function SideBar({ isOpenBar, setIsOpenBar }) {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M5 15l7-7 7 7"
+                  d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
                 ></path>
               </svg>
             </button>
           </h4>
         </div>
-        <ul class="text-sm text-center pl-3">
+        <ul class="space-y-2 text-sm text-center pl-3">
           {/* for main */}
           <li>
             <div class="group flex items-center space-x-3 text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
@@ -98,7 +98,7 @@ export default function SideBar({ isOpenBar, setIsOpenBar }) {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokewidth="2"
                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
                   ></path>
                 </svg>

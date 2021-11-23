@@ -11,7 +11,7 @@ export default function Memo({ memo }) {
       >
         <span class="md:text-lg font-semibold transition duration-100 pr-3">
           {memo.title}
-          <a class="italic text-gray-500 hover:no-underline text-xs md:text-sm pl-3">dated {memo.created_at}</a>
+          <a class="italic text-gray-500 hover:no-underline text-sm md:text-base pl-3">dated {memo.created_at}</a>
         </span>
 
         <span class="transform">

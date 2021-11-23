@@ -2,18 +2,18 @@ import Link from "next/link";
 
 export default function SideBar({ isOpenBar, setIsOpenBar }) {
   return (
-    <div class="flex flex-wrap bg-gray-100 w-full h-56 top-16 sticky z-10 lg:hidden">
+    <div class="flex flex-wrap bg-gray-100 w-full h-80 top-16 sticky z-10 lg:hidden">
       <div class="w-full bg-white p-3 shadow-lg rounded-3xl">
         <div class="items-center space-x-4 p-2">
           <h4 class="flex font-semibold text-base text-gray-700 capitalize font-poppins tracking-wide">
             <div class="flex-none font-bold w-24">Pages List</div>
-            <div class="flex-grow inline-block"></div>
+          
             <button
               class="inline-block flex-none w-10 h-9 rounded-full hover:bg-gray-200 hover:text-indigo-500"
               onClick={() => setIsOpenBar(!isOpenBar)}
             >
               <svg
-                className="w-6 h-6 pb-1"
+                className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -29,7 +29,7 @@ export default function SideBar({ isOpenBar, setIsOpenBar }) {
             </button>
           </h4>
         </div>
-        <ul class="text-sm text-center pl-3">
+        <ul class="space-y-2 text-sm text-center pl-3">
           {/* for main */}
           <li>
             <div class="group flex items-center space-x-3 text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">

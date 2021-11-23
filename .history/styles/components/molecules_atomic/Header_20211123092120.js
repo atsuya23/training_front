@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
 
-import ModifyButton from "../atoms_atomic/button/ModifyButton";
-import RegisterButton from "../atoms_atomic/button/RegisterButton";
+// import ModifyButton from "../atoms_atomic/button/ModifyButton";
+// import RegisterButton from "../atoms_atomic/button/RegisterButton";
 import SideBar from "./SideBar";
 
 export default function Header() {
@@ -15,7 +15,8 @@ export default function Header() {
             {/* logo - start */}
             <Link href="../main-page">
               <div
-                class="hover:text-gray-50 inline-flex items-center text-gray-300 text-2xl md:text-3xl font-extrabold gap-2.5 mb-3 hover:bg-gray-600 px-4 rounded-3xl ml-1 md:ml-2 hover:opacity-100 cursor-pointer"
+                class="hover:text-gray-50 inline-flex items-center text-gray-300 text-2xl md:text-3xl font-extrabold gap-2.5 mb-3 hover:bg-gray-600 px-4 rounded-3xl ml-2 hover:opacity-100 cursor-pointer"
+                aria-label="logo"
               >
                 <img
                   src="https://training-rest.herokuapp.com/media/images/dumbbell_icon.jpg"

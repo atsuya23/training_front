@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SideBar({ isOpenBar, setIsOpenBar }) {
   return (
-    <div class="flex flex-wrap bg-gray-100 w-full h-56 top-16 sticky z-10 lg:hidden">
+    <div class="flex flex-wrap bg-gray-100 w-full h-80 top-16 sticky z-10 lg:hidden">
       <div class="w-full bg-white p-3 shadow-lg rounded-3xl">
         <div class="items-center space-x-4 p-2">
           <h4 class="flex font-semibold text-base text-gray-700 capitalize font-poppins tracking-wide">
